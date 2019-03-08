@@ -4,9 +4,14 @@ const jwtKey =
   process.env.JWT_SECRET ||
   'add a .env file to root of project with the JWT_SECRET variable';
 
+  // I have no idea what this means and I don't have hours too figure it out...
+  // the jwt site is the worst site I've ever seen in terms of documentation...
+  // because there isn't any...
+
+
 // quickly see what this file exports
 module.exports = {
-  authenticate,
+  authenticate, jwtKey
 };
 
 // implementation details
