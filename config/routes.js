@@ -4,15 +4,14 @@ const jwt = require ('jsonwebtoken');
 
 const duhbee = require('../database/dbConfig')
 
-const { authenticate } = require('../auth/authenticate');
-//const secret = require('../auth/authenticate');
-//import jwtkey from '../auth/authenticate';
-
-const jwtKey =
-  process.env.JWT_SECRET ||
-  'add a .env file to root of project with the JWT_SECRET variable'
+const { authenticate, jwtKey } = require('../auth/authenticate');
 
 
+// const jwtKey =
+//   process.env.JWT_SECRET ||
+//   'add a .env file to root of project with the JWT_SECRET variable'
+
+// today I learned I can export basic variables and not just functions
 
 
 
